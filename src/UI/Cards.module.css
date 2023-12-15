@@ -1,0 +1,30 @@
+.Cards{
+    height: 30rem;
+    width: 25rem;
+    /* margin-top: 5%; */
+    overflow: hidden !important;
+    object-fit: cover;
+}
+
+.Cards:hover{
+    visibility: visible !important;
+  }
+
+
+.Cards  img {
+    /* width: 80%;
+    height: 80%; */
+    object-fit: cover !important;
+    border-radius: 10px;
+    transition: all ease .5s;
+  }
+
+  .Cards  img:hover{
+    transform: scale(0.9);
+  }
+
+ 
+
+   
+
+   

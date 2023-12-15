@@ -1,0 +1,304 @@
+/* *{
+  background-color:gray;
+} */
+
+/* all navbar componet image css */
+.banner{
+     
+    /* height: 30rem !important;
+    width: 100%; */
+    color: white;
+    margin-top: 15px;
+    border: 5px solid black;
+}
+
+.banner :hover{
+    transition: .10s;
+    /* opacity: .5; */
+}
+
+.heading{
+    color: white;
+}
+
+.myimg {
+    height: 35rem;
+    width: 100%;
+}
+
+
+/* home-> swiper css */
+.sliders{
+    height: 42rem;
+    width: 90vw;
+    margin-left: 5vw;
+    /* margin-right: 5vw; */ 
+    
+}
+
+/* .banner-swiper{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5px;
+    overflow: hidden;
+
+} */
+
+.swiper-img{
+    height: 42rem ;
+    width: 190vh;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+
+
+}
+
+/* About Page */
+.myimg1{
+    /* height: 100% !important;
+    width: 100% !important; */
+    height: 35rem;
+    width: 100%;
+    /* margin-bottom: 10px; */
+    
+     
+}
+
+
+
+/* review css  this is in footer top section*/
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 3rem;
+  height: 3rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+
+  .main-review{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+
+  
+
+
+/* AllHome card component */
+  /* card image size  */
+  .card{
+    overflow: hidden !important;
+   
+  }
+
+  .card:hover{
+    visibility: visible !important;
+  }
+
+
+  .card  img {
+    transition: transform 900ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+  }
+
+  .card  img:hover{
+    transform: scale(0.9);
+  }
+  .card-img-top{
+    /* height: 35vh;
+    width: 35vw; */
+    height: 40vh;
+    width: 40vw;
+  }
+
+
+
+  /* AboutCard1 css */
+  .About-img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    /* padding: 7%; */
+    border: 1px solid rgb(20, 20, 20);
+    transition: all ease .5s;
+  }
+
+
+  .About-img:hover{
+    /* height: 50%;
+    width: 50%; */
+    box-shadow: 0 0 1px transparent;
+    transform: scale(0.8);
+    
+    
+
+  }
+
+  /* About Us page 3 last card img */
+  .AboutUS-img{
+    height: 33rem !important;
+    width: 55rem !important;
+    padding: 10px;
+    /* border-radius: 5px; */
+
+  }
+
+  .About-bgimg  img {
+    transition: all ease .5s;
+  }
+
+  .About-bgimg  img:hover{
+    transform: scale(0.9);
+  }
+  /* Abouts Us chya card mdhla Paragraph */
+  .Aboutpara{
+    justify-content: center;
+    padding-left: 40%;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 10%; 
+    text-align: justify !important;
+    /* display: flex;
+    float: left;
+    position: relative; */
+     
+  }
+ 
+
+   
+
+  
+ /* blog section css */
+ /* scrooll me  */
+  .bg-image {
+    height: 30%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.5rem;
+
+}
+
+.scroll-me {
+    height: 75%;
+    width: 100%;
+
+}
+
+/* blog section */
+.grid-cols img {
+
+  transition: all ease .5s;
+}
+
+.grid-cols img:hover {
+
+  transform: scale(0.9);
+}
+
+.about-info img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px #deb887;
+}
+  
+  /* living component css */
+  .livingDiv{
+    display: flex;
+    /* justify-content: center; */
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 1rem;
+    text-align: justify !important;
+    
+    /* background-color: aqua; */
+  }
+  
